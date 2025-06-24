@@ -1,35 +1,31 @@
-@import './base.css';
+@import 'tailwindcss';
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  font-weight: normal;
+@font-face {
+  font-family: Anta;
+  src: url(@/assets/fonts/anta-Regular.ttf);
 }
 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  padding: 3px;
+@font-face {
+  font-family: Alegreya;
+  src: url(@/assets/fonts/Alegreya.ttf);
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
+@theme {
+  --font-1: Anta;
+  --font-2: Alegreya;
+  --color-apple: #fa2b43;
+  --color-spotify: #1ed760;
+  --color-tidal: #000;
+  --color-amazon: #3cbed9;
+  --color-youtube: #fe9b9b;
+  --color-soundcloud: #ff5500;
 }
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
+@layer base {
+}
 
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
+@layer components {
+  .nav-link {
+    @apply block w-full h-full py-[0.5rem] px-[1rem] hover:text-[3.6rem] hover:text-shadow-[0.4rem_0.3rem_0.5rem_#000] duration-300;
   }
 }
