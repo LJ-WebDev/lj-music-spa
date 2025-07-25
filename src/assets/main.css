@@ -16,16 +16,64 @@
   --color-apple: #fa2b43;
   --color-spotify: #1ed760;
   --color-tidal: #000;
+  --color-light-tidal: #fff;
   --color-amazon: #3cbed9;
   --color-youtube: #fe9b9b;
+  --color-music-youtube: #fd1d42;
   --color-soundcloud: #ff5500;
+  --color-deezer: #8400ff;
+  --color-boomplay: #005fcc;
+  --color-iheart: #e70045;
+  --color-jiosaavn: #1eccb0;
 }
 
 @layer base {
+  th {
+    @apply font-normal gap-2;
+  }
+  td {
+    @apply /* pt-[5px] */ italic;
+  }
+
+  tbody tr:first-child td {
+    @apply pt-[5px];
+  }
 }
 
 @layer components {
   .nav-link {
-    @apply block w-full h-full py-[0.5rem] px-[1rem] hover:text-[3.6rem] hover:text-shadow-[0.4rem_0.3rem_0.5rem_#000] duration-300;
+    @apply block w-full h-full py-[0.5rem] px-[1rem] hover:text-[3.6rem] hover:text-shadow-[0.3rem_0.3rem_0.75rem_#000] duration-300;
+  }
+
+  .glass-breaker {
+    @apply bg-gradient-to-b from-[#fbed30] to-[#110f0c] hover:shadow-[0_0_20px_#bfbb74];
+  }
+
+  .rising-from-below {
+    @apply bg-gradient-to-b from-[#6d6d6d] to-[#1a1a1a] hover:shadow-[0_0_20px_#494e4f];
+  }
+
+  .jingle-bells {
+    @apply bg-gradient-to-b from-[#b1bdbe] to-[#464c52] hover:shadow-[0_0_20px_#cbd1d2];
+  }
+
+  .the-path {
+    @apply bg-gradient-to-b from-[#205d65] to-[#093220] hover:shadow-[0_0_20px_#11383b];
+  }
+
+  .motivator-tension {
+    @apply bg-gradient-to-b from-[#980e2d] to-[#240000] hover:shadow-[0_0_20px_#250810];
+  }
+
+  .care-free {
+    @apply bg-gradient-to-b from-[#7788a1] to-[#011a44] hover:shadow-[0_0_20px_#7a7771];
+  }
+
+  .soaring-high {
+    @apply bg-gradient-to-b from-[#bccbd1] to-[#005c7d] hover:shadow-[0_0_20px_#5699ae];
+  }
+
+  .ashes-to-light {
+    @apply bg-gradient-to-b from-[#d7a57d] to-[#380502] hover:shadow-[0_0_20px_#815541];
   }
 }
