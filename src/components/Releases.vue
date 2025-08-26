@@ -312,7 +312,7 @@ function expandPlayback() {
       </div>
       <div
         v-if="release.unreleased"
-        class="text-[6rem] text-red-600 rotate-345 absolute top-[4rem] left-[20rem]"
+        class="text-[6rem] text-red-600 rotate-345 absolute top-[15rem] sm:top-[4rem] left-[5rem] sm:left-[15rem] px-[2rem]"
       >
         Coming Soon
       </div>
