@@ -181,17 +181,18 @@ export const releases = [
     title: 'Ashes to Light',
     releaseType: 'Single',
     releaseDate: '03/09/2025',
-    unreleased: true,
     duration: '5:08',
     description: '',
-    ytLinkAlbum: '',
+    ytLinkAlbum:
+      'https://www.youtube.com/playlist?list=OLAK5uy_nTsKum1qc7-8inz9KlhOlfgwjuZgZYA8I',
     tracks: [
       {
         ISRC: 'GXESV2591631',
         title: 'Ashes to Light',
         duration: '5:08',
-        ytLinkTrack: '',
-        ytId: '',
+        ytLinkTrack:
+          'https://www.youtube.com/watch?v=q4Xw4N9JITw&list=OLAK5uy_nTsKum1qc7-8inz9KlhOlfgwjuZgZYA8I&index=1',
+        ytId: 'q4Xw4N9JITw',
       },
     ],
   },
