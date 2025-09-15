@@ -217,4 +217,25 @@ export const releases = [
   //     },
   //   ],
   // },
+  // {
+  //   UPC: '',
+  //   className: '',
+  //   img: '',
+  //   title: '',
+  //   releaseType: 'Single',
+  //   releaseDate: '',
+  //   unreleased: true,
+  //   duration: '5:08',
+  //   description: '',
+  //   ytLinkAlbum: '',
+  //   tracks: [
+  //     {
+  //       ISRC: '',
+  //       title: '',
+  //       duration: '8:08',
+  //       ytLinkTrack: '',
+  //       ytId: '',
+  //     },
+  //   ],
+  // },
 ];

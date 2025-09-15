@@ -151,8 +151,10 @@ function expandPlayback() {
 <template>
   <footer
     :class="[
-      'playback sticky bottom-8 bg-[#000] shadow-[0_0_2rem_#000] font-1 text-[1.8rem]/[2rem]  text-white flex gap-[2rem] flex-row items-center justify-center w-full mt-[3rem] mx-auto p-[1rem] rounded-3xl transition-all duration-500 z-100',
-      playbackExpanded ? 'h-[50rem]' : 'h-[7rem]',
+      'playback sticky bottom-8 bg-[#000] shadow-[0_0_2rem_#000] font-1 text-white flex gap-[2rem] flex-row items-center justify-center w-full mt-[3rem] mx-auto p-[1rem] rounded-3xl transition-all duration-500 z-100',
+      playbackExpanded
+        ? 'h-[50rem] text-[2.2rem]/[3.2rem] sm:text-[2.6rem]/[4rem] text-center'
+        : 'h-[7rem] text-[1.4rem]/[2rem] sm:text-[2rem]/[2rem]',
     ]"
   >
     <!-- Play / Pause button -->
@@ -172,19 +174,23 @@ function expandPlayback() {
         <div
           :class="[
             'mb-4 flex items-center justify-center duration-500',
-            playbackExpanded ? 'flex-col basis-[25%]' : 'flex-row basis-[75%]',
+            playbackExpanded
+              ? 'flex-col sm:basis-[25%] basis-[50%]'
+              : 'flex-row basis-[75%] gap-3',
           ]"
         >
           <a
             target="_blank"
             :href="currentYtLinkTrack"
             :class="[
-              'flex items-center justify-center gap-[0.5rem]',
-              playbackExpanded ? 'flex-col' : 'flex-row',
+              'flex items-center justify-center text-white hover:text-red-500 duration-300',
+              playbackExpanded
+                ? 'flex-col gap-[0.8rem]'
+                : 'flex-row gap-[0.8rem] sm:gap-[1.5rem]',
             ]"
             title="Open in YouTube"
           >
-            <div class="basis-[4rem] pr-[1rem]">
+            <div class="basis-[4rem]">
               <img
                 :src="
                   releases.find((r) =>
@@ -264,7 +270,7 @@ function expandPlayback() {
           <thead class="text-[1.6rem]/[3rem]">
             <tr class="border-b-[1px] border-b-[#222]">
               <th class="w-[5%] text-center">#</th>
-              <th class="w-[80%] text-left">Table</th>
+              <th class="w-[80%] text-left">Track</th>
               <th class="w-[10%] text-right px-[1.4rem]">
                 <img
                   src="../assets/icons/clock-icon.png"
