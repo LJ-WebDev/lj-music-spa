@@ -31,6 +31,11 @@ import HeaderMusicPlatforms from './HeaderMusicPlatforms.vue';
         </li>
       </ul>
     </nav> -->
+    <div
+      class="w-full text-[#380502] font-2 italic !hidden sm:!flex justify-center"
+    >
+      <p class="">New Release &ndash; Ashes to Light</p>
+    </div>
 
     <div class="!hidden sm:!flex">
       <ul>

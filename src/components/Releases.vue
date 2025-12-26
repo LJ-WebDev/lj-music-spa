@@ -183,7 +183,7 @@ function expandPlayback() {
             target="_blank"
             :href="currentYtLinkTrack"
             :class="[
-              'flex items-center justify-center text-white hover:text-red-500 duration-300',
+              'flex items-center justify-center text-white hover:text-red-500',
               playbackExpanded
                 ? 'flex-col gap-[0.8rem]'
                 : 'flex-row gap-[0.8rem] sm:gap-[1.5rem]',
