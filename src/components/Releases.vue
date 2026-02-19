@@ -260,7 +260,7 @@ function expandPlayback() {
           {{ release.title }}
         </h2>
         <p class="text-[1.8rem]/[2.2rem]">
-          {{ release.releaseType }} - {{ release.releaseDate }} •
+          {{ release.releaseType }} &ndash; {{ release.releaseDate }} &bull;
           {{ release.tracks.length }}
           {{ release.tracks.length === 1 ? 'Track' : 'Tracks' }},
           {{ release.duration }}

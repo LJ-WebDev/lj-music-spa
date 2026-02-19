@@ -34,7 +34,7 @@ import HeaderMusicPlatforms from './HeaderMusicPlatforms.vue';
     <div
       class="w-full text-[#380502] font-2 italic !hidden sm:!flex justify-center"
     >
-      <p class="">New Release &ndash; Ashes to Light</p>
+      <p class="">Upcoming Release &ndash; Falling Light &ndash; 20/02/2026</p>
     </div>
 
     <div class="!hidden sm:!flex">

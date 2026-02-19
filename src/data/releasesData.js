@@ -5,7 +5,8 @@ import thePathCoverArt from '@/assets/cover-art/the-path-cover-art.jpg';
 import motivatorTensionCoverArt from '@/assets/cover-art/motivator-tension-cover-art.jpg';
 import careFreeCoverArt from '@/assets/cover-art/care-free-cover-art.jpg';
 import soaringHighCoverArt from '@/assets/cover-art/soaring-high-cover-art.jpg';
-import ashesToLight from '@/assets/cover-art/ashes-to-light.jpg';
+import ashesToLight from '@/assets/cover-art/ashes-to-light-cover-art.jpg';
+import fallingLight from '@/assets/cover-art/falling-light-cover-art.jpg';
 
 export const releases = [
   {
@@ -196,10 +197,31 @@ export const releases = [
       },
     ],
   },
+  {
+    UPC: '5063906952052',
+    className: 'falling-light',
+    img: fallingLight,
+    title: 'Falling Light',
+    releaseType: 'Single',
+    releaseDate: '20/02/2026',
+    unreleased: true,
+    duration: '4:15',
+    description: '',
+    ytLinkAlbum: '',
+    tracks: [
+      {
+        ISRC: 'GX8KD2645776',
+        title: 'Falling Light',
+        duration: '4:15',
+        ytLinkTrack: '',
+        ytId: '',
+      },
+    ],
+  },
   // {
   //   UPC: '',
   //   className: '',
-  //   img: '',
+  //   img: ,
   //   title: '',
   //   releaseType: 'Single',
   //   releaseDate: '',
@@ -220,7 +242,7 @@ export const releases = [
   // {
   //   UPC: '',
   //   className: '',
-  //   img: '',
+  //   img: ,
   //   title: '',
   //   releaseType: 'Single',
   //   releaseDate: '',
