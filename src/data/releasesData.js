@@ -204,17 +204,19 @@ export const releases = [
     title: 'Falling Light',
     releaseType: 'Single',
     releaseDate: '20/02/2026',
-    unreleased: true,
+    unreleased: false,
     duration: '4:15',
     description: '',
-    ytLinkAlbum: '',
+    ytLinkAlbum:
+      'https://www.youtube.com/playlist?list=OLAK5uy_lcuN2c_ulUZhG23_M2U_OXoU8pkwIba1o',
     tracks: [
       {
         ISRC: 'GX8KD2645776',
         title: 'Falling Light',
         duration: '4:15',
-        ytLinkTrack: '',
-        ytId: '',
+        ytLinkTrack:
+          'https://www.youtube.com/watch?v=wUsmuORIFLA&list=OLAK5uy_lcuN2c_ulUZhG23_M2U_OXoU8pkwIba1o&index=1',
+        ytId: 'wUsmuORIFLA',
       },
     ],
   },
